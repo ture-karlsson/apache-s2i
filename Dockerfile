@@ -15,7 +15,7 @@ RUN chmod -R a+rwx /run/httpd /etc/httpd/logs /var/www/html
 
 COPY ./s2i/ $STI_SCRIPTS_PATH
 
-USER nobody
+USER 1001
 
 CMD $STI_SCRIPTS_PATH/usage
 
